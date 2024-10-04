@@ -1,0 +1,23 @@
+{
+    "coinbase": {
+        "name": "Coinbase",
+        "api_url": "https://api.exchange.coinbase.com/products/BTC-USD/book",
+        "query_params": {"level": "2"},
+        "price_key": 0,
+        "quantity_key": 1
+    },
+    "gemini": {
+        "name": "Gemini",
+        "api_url": "https://api.gemini.com/v1/book/btcusd",
+        "query_params": {"limit_bids": 0, "limit_asks": 0},
+        "price_key": "price",
+        "quantity_key": "amount"
+    },
+    "kraken": {
+        "name": "Kraken",
+        "api_url": "https://api.kraken.com/0/public/Depth",
+        "query_params": {"pair": "BTCUSD", "count": 500},
+        "price_key": 0,
+        "quantity_key": 1
+    }
+}
